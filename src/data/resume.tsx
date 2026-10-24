@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HomeIcon } from "lucide-react";
+import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
   name: "Frederico Morais",
@@ -12,7 +12,10 @@ export const DATA = {
   summary:
     "I combine a management background with hands-on technical work. I currently build tools and processes for production control and logistics at Forvia, and I run a self-hosted infrastructure lab spanning virtualization, networking, automation, observability, and backups.",
   avatarUrl: "/me.jpeg",
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
+  navbar: [
+    { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/blog", icon: NotebookIcon, label: "Blog" },
+  ],
   contact: {
     email: "work@fredmorais.dev",
     social: {
