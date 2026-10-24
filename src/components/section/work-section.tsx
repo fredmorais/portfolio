@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
-import { useState } from "react";
 import {
   Accordion,
   AccordionContent,
@@ -8,8 +7,9 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { DATA } from "@/data/resume";
-import { ChevronDown, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { ChevronDown, ChevronRight } from "lucide-react";
+import { useState } from "react";
 
 function LogoImage({ src, alt }: { src: string; alt: string }) {
   const [imageError, setImageError] = useState(false);
@@ -52,14 +52,14 @@ export default function WorkSection() {
                           "absolute h-3.5 w-3.5 shrink-0 text-muted-foreground stroke-2 transition-all duration-300 ease-out",
                           "translate-x-0 opacity-0",
                           "group-hover:translate-x-1 group-hover:opacity-100",
-                          "group-data-[state=open]:opacity-0 group-data-[state=open]:translate-x-0"
+                          "group-data-[state=open]:opacity-0 group-data-[state=open]:translate-x-0",
                         )}
                       />
                       <ChevronDown
                         className={cn(
                           "absolute h-3.5 w-3.5 shrink-0 text-muted-foreground stroke-2 transition-all duration-200",
                           "opacity-0 rotate-0",
-                          "group-data-[state=open]:opacity-100 group-data-[state=open]:rotate-180"
+                          "group-data-[state=open]:opacity-100 group-data-[state=open]:rotate-180",
                         )}
                       />
                     </span>
@@ -76,12 +76,18 @@ export default function WorkSection() {
               </div>
             </div>
           </AccordionTrigger>
-          <AccordionContent className="p-0 ml-13 text-xs sm:text-sm text-muted-foreground">
-            {work.description}
+          <AccordionContent className="p-0 ml-11 md:ml-13 text-xs sm:text-sm text-muted-foreground">
+            <div className="mb-2 text-xs font-medium text-foreground/70">
+              {work.location}
+            </div>
+            <ul className="list-disc space-y-2 pl-4 leading-relaxed">
+              {work.highlights.map((highlight) => (
+                <li key={highlight}>{highlight}</li>
+              ))}
+            </ul>
           </AccordionContent>
         </AccordionItem>
       ))}
     </Accordion>
   );
 }
-
