@@ -164,6 +164,7 @@ export const DATA = {
     },
     {
       title: "Sonae Hackathon",
+      href: "https://www.linkedin.com/feed/update/urn:li:share:7003444474697670658/",
       image: "/sonae.jpeg",
       description:
         "In collaboration with Nova SBE and Sonae, the ADP program was a venture between 24 Sonae employees and 15 Nova SBE that started with a hackathon to find new market opportunities.",

@@ -1,0 +1,36 @@
+---
+title: "Leonida Marketing: Building a GTA 6 Map in Real Life"
+publishedAt: "2026-10-24"
+author: "Frederico Morais"
+summary: "How I built Leonida Marketing, a community map for tracking GTA VI billboards, murals, vehicles, and branded locations around the world."
+image: "/leonida-marketing.jpeg"
+---
+
+# Leonida Marketing: Building a GTA 6 Map in Real Life
+
+The marketing campaign for GTA VI is appearing in the physical world through billboards, murals, custom vehicles, and branded locations. Leonida Marketing brings those sightings together on one map so the community can follow the campaign as it grows.
+
+## A map-first experience
+
+The project is designed around the map rather than a conventional list of posts. Each marker gives a real-world campaign sighting a geographic context, making it easier to see where Rockstar's marketing has appeared and how widely it has spread.
+
+The interface is responsive, so the same map remains useful whether someone is exploring it on a desktop or checking a location from their phone.
+
+## The technology
+
+Leonida Marketing uses a deliberately small stack:
+
+- **React** powers the interface.
+- **MapLibre GL JS** provides the interactive map.
+- **OpenFreeMap** supplies the vector tiles.
+- **OpenStreetMap** provides the underlying geographic data.
+- **YAML files** store the campaign locations and their content.
+- **Cloudflare Pages** hosts the application.
+
+There is no backend. Keeping the location data in YAML makes every entry easy to review, update, and version alongside the application itself. It also keeps deployment simple: a content change can follow the same workflow as a code change.
+
+## Turning a campaign into a timeline
+
+A single advertisement is easy to miss. Placing many sightings on a shared map turns them into something more useful: a visual record of how the campaign is unfolding across cities and countries.
+
+Leonida Marketing is available at [leonidamarket.ing](https://leonidamarket.ing), and its source code is available on [GitHub](https://github.com/fredmorais/leonida-marketing).

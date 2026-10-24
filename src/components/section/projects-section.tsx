@@ -34,11 +34,11 @@ export default function ProjectsSection() {
               <ProjectCard
                 key={project.title}
                 title={project.title}
-                href={project.href}
+                href={"href" in project ? project.href : undefined}
                 description={project.description}
                 tags={project.technologies}
                 image={project.image}
-                links={project.links}
+                links={"links" in project ? project.links : undefined}
               />
             </BlurFade>
           ))}
