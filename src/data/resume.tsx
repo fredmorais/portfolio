@@ -86,7 +86,7 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Nova School of Business and Economics",
+      school: "Nova School of Business and Economics ",
       href: "https://www.novasbe.unl.pt/en/",
       degree: "Master's in Management · Digital Business",
       logoUrl: "./nova-sbe.jpeg",
@@ -142,28 +142,14 @@ export const DATA = {
     },
   ],
   projects: [
-    // {
-    //   title: "Self-Hosted Infrastructure Lab",
-    //   description:
-    //     "I design and operate virtualized infrastructure with Proxmox and VLAN-segmented networking. The lab runs 15+ services with automated TLS, SSO, and Ansible provisioning, alongside automated deployments, monitoring, and backups across Linux systems.",
-    //   technologies: [
-    //     "Proxmox",
-    //     "Ansible",
-    //     "Docker",
-    //     "Linux",
-    //     "Traefik",
-    //     "TrueNAS",
-    //     "VLANs",
-    //   ],
-    // },
     {
       title: "GTA VI Marketing map",
       href: "https://leonidamarket.ing",
-      image: "./leonida-marketing.jpeg",
+      image: "/leonida-marketing.jpeg",
       links: [
         {
           type: "Website",
-          href: "https://leonidamerket.ing",
+          href: "https://leonidamarket.ing",
           icon: <Icons.globe className="size-3" />,
         },
         {
@@ -175,6 +161,20 @@ export const DATA = {
       description:
         "Leonida Marketing helps the community track the GTA VI campaign as it comes to life in cities around the world—from billboards and murals to custom vehicles and branded locations. The responsive, map-focused app uses MapLibre GL JS, OpenFreeMap vector tiles, OpenStreetMap data, and YAML content files, with no backend required.",
       technologies: ["React", "Cloudflare Pages"],
+    },
+    {
+      title: "Sonae Hackathon",
+      image: "/sonae.jpeg",
+      description:
+        "In collaboration with Nova SBE and Sonae, the ADP program was a venture between 24 Sonae employees and 15 Nova SBE that started with a hackathon to find new market opportunities.",
+      technologies: ["Hackathon"],
+      links: [
+        {
+          type: "Linkedin",
+          href: "https://www.linkedin.com/feed/update/urn:li:share:7003444474697670658/",
+          icon: <Icons.linkedin className="size-3" />,
+        },
+      ],
     },
   ],
   certificates: [
