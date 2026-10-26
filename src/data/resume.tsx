@@ -162,7 +162,7 @@ export const DATA = {
         },
       ],
       description:
-        "Leonida Marketing helps the community track the GTA VI campaign as it comes to life in cities around the world—from billboards and murals to custom vehicles and branded locations. The responsive, map-focused app uses MapLibre GL JS, OpenFreeMap vector tiles, OpenStreetMap data, and YAML content files, with no backend required.",
+        "Leonida Marketing helps the community track the GTA VI campaign as it comes to life in cities around the world—from billboards and murals to custom vehicles and branded locations. The responsive, map-focused app uses MapLibre GL JS, OpenFreeMap vector tiles, OpenStreetMap data, and YAML content files, all with no backend required.",
       technologies: ["React", "Cloudflare Pages"],
     },
     {
